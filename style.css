@@ -2,7 +2,8 @@
 body {
 	font-family: 'Merriweather', serif;
 	background: dodgerblue;
-	}
+}
+
 .section {
 	display: flex;
 	justify-content: center;
@@ -10,15 +11,13 @@ body {
 	height: 100%;
 	width: 100%;
 }
-a {
-	color: dodgerblue;
-}
+
 .section .content {
+	margin-top: 150px;
+	width: 500px;
+	height: 500px;
 	background-color: whitesmoke;
 	text-align: center;
-	width: 25%;
-	padding: 30px 15px;
-
 }
 .section .content button {
 	padding: 10px;
@@ -54,8 +53,9 @@ a {
 .section .content form div button {
 	background-color: orangered;
 	border: none;
-	color: #ffffff;
+	color: white;
 	align-self: center;
+	font-size: 16px;
 	margin-top: 10px;
 }
 .section .content form div button:hover {
