@@ -69,8 +69,7 @@ a {
 	color: black;
 	font-size: 14px;
 }
-
-
+/*-----------------------------------------------------*/
 header {
     position: fixed;
     width: 100%;
@@ -80,7 +79,7 @@ header {
 
 body {
     display: flex;
-    background-color: #ffffff;
+    background-color: white;
     flex-direction: row;
     align-items: center;
 }
@@ -99,9 +98,8 @@ nav {
   }
   
 .container {
-margin: 80px;
-max-width: 1200px;
-
+	margin: 80px;
+	max-width: 1200px;
 }
 
 nav .logo {
@@ -110,9 +108,8 @@ nav .logo {
     transform:translate(-50%, -20%);
     height: 47px;
     width: 121px;
-    background-image: url(res/photos/postIt.png);
-   background-repeat: no-repeat;
-
+    background-image: URL(x.png);
+    background-repeat: no-repeat;
   }
 
 nav img {
@@ -130,7 +127,7 @@ nav div.search-container > input {
     margin: 0;
     padding: 5px;
     cursor: pointer;
-    border: 1px solid #e0e0e0;
+    border: 1px solid whitesmoke;
 }
 
 nav div.search-container > button {
@@ -143,7 +140,7 @@ nav div.search-container > button {
     margin: 0;
     padding: 5px;
     cursor: pointer;
-    border: 1px solid #e0e0e0;
+    border: 1px solid whitesmoke;
 }
 
 main {
@@ -158,7 +155,7 @@ main {
     bottom:0;
     width:100%;
     height:60px;   /* Height of the footer */
-    background:rgb(255, 255, 255);
+    background:white;
     
 }
 
