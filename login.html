@@ -1,33 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html>
 
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Homework 1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Included .css and .js files -->
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
 
-    <title>Homework 1</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Please Log In</title>
 </head>
 
 <body>
-    <header>
-        login on ka vahva
-    </header>
+    <section class="section">
+        <div class="content">
+            <header>
+                <h1>Welcome to PostIt</h1>
+                <img src="x.png">
+                <br>
+                    <a href="" title="Create an account">Create an account</a>
+                    <p>Or</p>
+                    <p>Please Log In</p>
+            </header>
 
+            <section>
+                <form>
+                    <!-- User name or e-mail -->
+                    <div>
+                        <input type="email" placeholder="Email" id="email" />
+                    </div>
 
+                    <!-- Password -->
+                    <div>
+                        <input type="password" placeholder="Password" id="pass" name="password" />
+                    </div>
 
-    <main>
+                    <!-- Log In button -->
+                    <div >
+                        <button>
+                            <b>
+                                <a href="index.html">Log In</a>
+                            </b>
+                        </button>
+                    </div>
+                </form>
+            </section>
 
-    </main>
+            <!-- Forgot password link -->
+            <footer>
+                <a href title="Forgot password?">Forgot Password?</a>
+            </footer>
 
-
-    <footer>
-
-
-
-    </footer>
-
+        </div>
+    </section>
 </body>
 
 </html>

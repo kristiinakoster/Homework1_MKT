@@ -1,8 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 body {
 	font-family: 'Merriweather', serif;
-	background: dodgerblue;
+	background: #1e90ff;
+    margin:0;
+    padding:0;
 }
+
+a + p {
+	color: black;
+}
+
+a ~ p {
+	line-height: 0.9;
+	font-weight: bold;
+}
+
+
 .section {
 	display: flex;
 	justify-content: center;
@@ -10,15 +23,14 @@ body {
 	height: 100%;
 	width: 100%;
 }
-a {
-	color: dodgerblue;
-}
+
 .section .content {
 	margin-top: 150px;
+	text-align: center;
 	width: 500px;
 	height: 500px;
 	background-color: whitesmoke;
-	text-align: center;
+	
 }
 .section .content button {
 	padding: 10px;
@@ -51,12 +63,13 @@ a {
 	border-color: #1cd211;
 	outline: none;
 }
-.section .content form div button {
+.section div button {
 	background-color: orangered;
 	border: none;
-	color: #ffffff;
+	color: white;
 	align-self: center;
 	margin-top: 10px;
+	text-decoration: none;
 }
 .section .content form div button:hover {
 	background-color: limegreen;
@@ -69,100 +82,73 @@ a {
 	color: black;
 	font-size: 14px;
 }
-/*-----------------------------------------------------*/
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1;   
+
+form a {
+	text-decoration: none;
+	color: white;
 }
 
-body {
-    display: flex;
-    background-color: white;
-    flex-direction: row;
-    align-items: center;
+/*-----------------------------------------------------*/
+.header1 {
+    width: 100%;
+    top: 0;
+    z-index: 1;
+	position: fixed;
 }
 
 nav {
-    margin-top: -8px;
-    position: relative;
-    height: 50px;
-    width: 100%;
-    background: white;
-    z-index: 2;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
 }
 
-.fixed {
-    position: fixed;
-  }
-  
+nav div {
+    height: 30px;
+    padding: 10px;
+}
+
+div img {
+    height: 100%;
+}
+
 .container {
-	margin: 80px;
-	max-width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+div.search-container > input {
+	box-sizing: border-box;
+	width: 80%;
+	height: 30px;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #e0e0e0;
 }
 
-nav .logo {
-    position: absolute;
-    top: 50%;
-    transform:translate(-50%, -20%);
-    height: 47px;
-    width: 121px;
-    background-image: URL(x.png);
-    background-repeat: no-repeat;
-  }
-
-nav img {
-    height: 50%;
-    padding: 5%;
+nav div.search-container {
+	width: 50%;
 }
 
-nav div.search-container > input {
-    position: absolute;
-    right: 35%;
-    top: 40%;
-    transform:translate(-50%, -20%);
-    height: 20px;
+div.search-container > button {
+    box-sizing: border-box;
+    height: 30px;
     width: 20%;
     margin: 0;
     padding: 5px;
+    border: 1px solid dodgerblue;
     cursor: pointer;
-    border: 1px solid whitesmoke;
+    background-color: dodgerblue;
 }
 
-nav div.search-container > button {
+.indexfooter {
     position: absolute;
-    right: 30%;
-    top: 40%;
-    transform:translate(-50%, -20%);
-    height: 30px;
-    width: 10%;
-    margin: 0;
-    padding: 5px;
-    cursor: pointer;
-    border: 1px solid whitesmoke;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    align-items: center;
-}
-
-.centercolumn {
-    position:absolute;
     bottom:0;
     width:100%;
-    height:60px;   /* Height of the footer */
-    background:white;
-    
+    height:40px;   /* Height of the footer */
+    background:steelblue;
+    text-align: center;
 }
 
-.centercolumn footer p {
-    font-size: 15px;
-}
-       
 
 /* telefoni ekraani jaoks*/
   
@@ -172,4 +158,4 @@ main {
 		 padding-left: 0;
 		 margin: 0 10px;
 	}
-} 
+}
