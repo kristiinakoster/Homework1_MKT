@@ -71,12 +71,6 @@ a {
 }
 
 
-.header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1;
-}
 .cont {
     margin-top: 100px;
     height: 100%;
@@ -123,6 +117,11 @@ a {
 .date{
     width: 50%;
     float: right;
+}
+.date p {
+    font-style: italic;
+    text-align: right;
+    padding-right: 5px;
 }
 .text p {
     text-align: center;
