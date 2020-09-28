@@ -142,3 +142,8 @@ hr{
     padding: 8px;
     
 }
+p ~ ul {
+    padding-left: 30%;
+    font-size: 18px;
+    font-style: italic;
+  }
