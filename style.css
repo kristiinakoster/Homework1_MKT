@@ -97,7 +97,7 @@ a {
     width: 80%;
     margin-bottom: 50px;;
     margin-top: 20px;
-    border: 1px solid gray;
+    border: 2px solid gray;
     box-shadow: 0 -20px 30px #4d4d4d;
 }
 #image {
@@ -111,20 +111,35 @@ a {
 .row{
     display: flex;
     flex-direction: row;
-    border:1px solid gray;
     overflow: auto;
 }
-.column img{
-    width: 30px;
+.wrapper{
+    width: 100%;
+}
+.image{
+    width: 50%;
+    float: left;
+}
+.date{
+    width: 50%;
     float: right;
 }
-.column p{
-    float: right;
-}
-#text {
+.text p {
     text-align: center;
     padding: 5px;
 }
-img {
+.bigImage img {
     width: 100%;
+}
+
+hr{
+    border:1px solid gray;
+    width: 100%;
+    margin: 0;
+}
+.row #image:hover {
+    width: 35px;
+    height: 35px;
+    padding: 8px;
+    
 }
